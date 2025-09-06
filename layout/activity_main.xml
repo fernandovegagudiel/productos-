@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="284dp"
+        android:layout_height="16dp"
+        android:background="#FF5722"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="73dp"
+        android:layout_height="wrap_content"
+        android:background="#8BC34A"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:layout_width="178dp"
+        android:layout_height="39dp"
+        android:background="#FF5722"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="287dp"
+        android:layout_height="18dp"
+        android:background="#4CAF50"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <Spinner
+            android:id="@+id/spinner_estado"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/estados_array" />
+
+        <EditText
+            android:id="@+id/edit_fecha"
+            android:layout_width="110dp"
+            android:layout_height="62dp"
+            android:layout_weight="1"
+            android:hint="Fecha (yyyy-MM-dd)"
+            android:inputType="date" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_filtrar"
+        android:layout_width="wrap_content"
+        android:layout_height="89dp"
+        android:text="Filtrar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_productos"
+        android:layout_width="376dp"
+        android:layout_height="286dp"
+        android:layout_weight="1"
+        android:paddingTop="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/btn_reporte"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Reporte" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_agregar"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:text="Agregar" />
+</LinearLayout>

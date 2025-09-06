@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar5"
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <TextView
+        android:id="@+id/text_reporte"
+        android:layout_width="373dp"
+        android:layout_height="109dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:rotationX="2"
+        android:text="REPORTE"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar7"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <TextView
+        android:id="@+id/text_detalle_reporte"
+        android:layout_width="377dp"
+        android:layout_height="374dp"
+        android:text="Detalles del reporte aparecerán aquí."
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar6"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <Button
+        android:id="@+id/btn_volver"
+        android:layout_width="123dp"
+        android:layout_height="77dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="24dp"
+        android:text="Volver" />
+</LinearLayout>
+
